@@ -47,7 +47,7 @@ with  TelegramClient(session_name, telegram_api, telegram_hash) as client: #Repl
  # automatic greeting
  @client.on(events.NewMessage(pattern='(?i)hi|hello|hey'))
  async def handler(event):
-    await event.respond('Hey! Welcome to LuckyShibaInu, one of the most promising projects on BSC')
+    await event.respond('Hey! Welcome to Channel, one of the most promising projects on BSC')
 
  client.run_until_disconnected()    # run till disconnected
 

@@ -2,6 +2,7 @@ from telethon.sync import TelegramClient
 from telethon import functions, types
 
 #get kicked user list
+#populate api and hash and session name below
 with TelegramClient(name, api, hash) as client3:
     result = client3(functions.channels.GetAdminLogRequest(
         channel='channel_name',

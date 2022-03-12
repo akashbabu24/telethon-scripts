@@ -1,13 +1,12 @@
 # telethon-scripts
 telethon python scripts I created for different purposes recently
 
-INSTALLATION
+#INSTALLATION
 pip3 install telethon
 
 the scripts are executable individually. Get your api credentials from https://my.telegram.org/apps in order to make use of the scripts as showed below, insert the values into the script where comments say so.
 
-# These example values won't work. You must get your own api_id and
-# api_hash from https://my.telegram.org, under API Development.
+The example values won't work. You must get your own api_id and api_hash from https://my.telegram.org, under API Development.
 api_id = 12345
 api_hash = '0123456789abcdef0123456789abcdef'
 

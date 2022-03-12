@@ -13,17 +13,16 @@ while my_list:
  namechosen = random.choice(session_list)
 
  if namechosen == 'user1' :
-    api = ''
+    api = ''    #user1 api/hash here. Note even given here, additional otp authentication is there while executing the sctipt
     api_hash = ''
-   # client = TelegramClient(namechosen, api, api_hash)
  elif namechosen == 'user2' :
-    api = ''
+    api = ''     #user2 api/hash here
     api_hash = ''    
  else:
-    api = ''
+    api = ''   #default or user3 api/hash here
     api_hash = ''
 
- with  TelegramClient(namechosen, api, api_hash) as client:    # xavier britto
+ with  TelegramClient(namechosen, api, api_hash) as client:    #user's api and hash taken based on random choice
   random_key = '/home/ec2-user/telethon/general-stuff/' + random.choice(my_list)
   client.send_file('channel', random_key)
  time.sleep(random.choice(time_))

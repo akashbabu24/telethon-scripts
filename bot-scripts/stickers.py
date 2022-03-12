@@ -6,24 +6,25 @@ import random
 from telethon.sync import TelegramClient
 from telethon import functions, types
 
+#user choice list
 session_list = ['user1', 'user2']
+
+#delay timer list
 time_ = [100, 250, 360, 560, 650]
-#[100, 210, 340, 450, 560]
+
+#choose any one of first 5 sticker packs randomly
 sticker_pack = [1, 2, 3, 4, 5]
 
 while True:
  namechosen = random.choice(session_list)
 
  if namechosen == 'user1':
-    api = ''
+    api = ''      #user1 api and hash values
     api_hash = ''
  elif namechosen == 'user2' :
-    api = ''   #insert api of your user1
+    api = ''   #insert api of your user2
     api_hash = ''   #insert hash of user2 from https://my.telegram.org/apps
- else:
-    api = ''
-    api_hash = ''
-
+ 
  with  TelegramClient(namechosen, api, api_hash) as client:
     # Get all the sticker sets this user has
   sticker_sets = client(GetAllStickersRequest(0))
